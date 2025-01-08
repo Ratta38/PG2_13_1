@@ -31,10 +31,9 @@ public:
 	/// </summary>
 	void Draw();
 public:
-	static int count;
+	static bool isActive_;
 	Vector2 pos_;
 	float radius_;
 	float speed_;
-	bool isActive_;
 };
 

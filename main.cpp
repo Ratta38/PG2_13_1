@@ -6,7 +6,7 @@
 
 const char kWindowTitle[] = "GC1C_12_ミハラ_ユウタ_タイトル";
 
-int Enemy::count = 1;
+bool Enemy::isActive_ = true;
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
@@ -48,7 +48,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		}
 		
 		if (keys[DIK_R] && !preKeys[DIK_R]) {
-			Enemy::count = 1;
+			Enemy::isActive_ = true;
 		}
 
 		///

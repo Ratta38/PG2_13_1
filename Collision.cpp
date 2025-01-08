@@ -14,6 +14,6 @@ void Collision(Enemy* enemy, Bullet* bullet)
 	float distance = sqrtf(static_cast<float>(pow(distanceX, 2) + pow(distanceY, 2)));
 
 	if (distance <= enemy->radius_ + bullet->radius_) {
-		enemy->count = 0;
+		enemy->isActive_ = false;
 	}
 }

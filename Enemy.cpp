@@ -23,11 +23,11 @@ void Enemy::Update()
 		speed_ *= -1;
 	}
 
-	if (count == 0) {
+	/*if (count == 0) {
 		isActive_ = false;
 	} else {
 		isActive_ = true;
-	}
+	}*/
 }
 
 void Enemy::Draw()
